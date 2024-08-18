@@ -60,7 +60,7 @@ def save_generated_images(generator, epoch, latent_dim):
     # fig, axs = plt.subplots(4, 4, figsize=(4, 4))
     # cnt = 0
     # for i in range(4):
-    #     for j in range(4):
+    
     #         axs[i,j].imshow(generated_images[cnt])
     #         axs[i,j].axis('off')
     #         cnt += 1
