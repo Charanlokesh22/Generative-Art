@@ -13,7 +13,7 @@ def load_and_preprocess_images(image_size=(64, 64)):
     x_train = np.array([np.resize(img, image_size + (3,)) for img in x_train])  # Ensure correct shape
     return x_train
 
-# Build the generator model
+# Build the generator
 def build_generator(latent_dim):
     model = Sequential()
     model.add(Dense(256 * 16 * 16, input_dim=latent_dim))
