@@ -104,7 +104,7 @@ def train_gan(gan, generator, discriminator, images, epochs=100, batch_size=64):
         print(f"Epoch {epoch + 1}/{epochs} | D Loss: {d_loss} | G Loss: {g_loss}")
         save_generated_images(generator, epoch, latent_dim)
 
-# Main function
+# Main 
 def main():
     image_size = (64, 64)
     images = load_and_preprocess_images(image_size=image_size)
