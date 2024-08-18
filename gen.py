@@ -8,7 +8,7 @@ from tensorflow.keras.datasets import cifar10
 # Load and preprocess the images
 def load_and_preprocess_images(image_size=(64, 64)):
     (x_train, _), (_, _) = cifar10.load_data()
-    x_train = x_train.astype('float32') / 255.0  # Normalize images to [0, 1]
+    x_train = x_train.astype('float32') / 255.0  # Normalize images to 
     x_train = np.array([img_to_array(img) for img in x_train])
     x_train = np.array([np.resize(img, image_size + (3,)) for img in x_train])  # Ensure correct shape
     return x_train
