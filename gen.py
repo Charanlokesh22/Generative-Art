@@ -5,7 +5,7 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.datasets import cifar10
 
-# Load and preprocess the images
+# Load and preprocess the 
 def load_and_preprocess_images(image_size=(64, 64)):
     (x_train, _), (_, _) = cifar10.load_data()
     x_train = x_train.astype('float32') / 255.0  # Normalize images to 
